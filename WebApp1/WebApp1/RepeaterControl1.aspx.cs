@@ -20,6 +20,8 @@ namespace WebApp1
 
         private void GetCustomers(int iPageIndex)
         {
+
+
             string conString = ConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString;
             SqlConnection sqlCon = new SqlConnection(conString);
             sqlCon.Open();
