@@ -20,6 +20,8 @@ namespace WebApp1
 
         private void GetCustomers()
         {
+
+            ///Normal pagination
             DataTable dtData = new DataTable();
             string conString = ConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString;
             SqlConnection sqlCon = new SqlConnection(conString);
