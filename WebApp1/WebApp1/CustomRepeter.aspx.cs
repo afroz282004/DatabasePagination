@@ -45,6 +45,8 @@ namespace WebApp1
                 pageds.CurrentPageIndex = 0;
             if (pageds.PageCount > 1)
             {
+
+
                 rptPaging.Visible = true;
                 ArrayList pages = new ArrayList();
                 for (int i = 0; i < pageds.PageCount; i++)
