@@ -21,7 +21,7 @@ namespace WebApp1
         private void GetCustomers(int iPageIndex)
         {
 
-
+            //Afroz develop for Database level pagination dated 10-Jan-20
             string conString = ConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString;
             SqlConnection sqlCon = new SqlConnection(conString);
             sqlCon.Open();
@@ -48,6 +48,7 @@ namespace WebApp1
             }
             Repeater2.DataSource = lPages;
             Repeater2.DataBind();
+            //Afroz develop for Database level pagination dated 10-Jan-20
         }
 
         protected void Repeater2_ItemCommand(object source, RepeaterCommandEventArgs e)
